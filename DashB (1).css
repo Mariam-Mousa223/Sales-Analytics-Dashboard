@@ -1,0 +1,148 @@
+/* الإعدادات العامة للوحة التحكم */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    line-height: 1.5;
+}
+
+/* الهيدر العلوي */
+.dashboard-header {
+    background-color: #1e293b;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #f8fafc;
+}
+
+.user-profile {
+    font-weight: 600;
+    color: #38bdf8;
+}
+
+.container {
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* كروت الإحصائيات الذكية */
+.stats-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 220px;
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.2);
+    border-left: 5px solid #38bdf8;
+}
+
+.stat-card h3 {
+    margin: 0 0 10px 0;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-card .value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+/* جدول عرض البيانات النظيفة وتثبيت العرض */
+.table-section {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.2);
+}
+
+.table-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: #38bdf8;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    table-layout: fixed; /* يمنع خروج النصوص خارج الخلية ويعطي استقرار */
+}
+
+.data-table th, 
+.data-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #334155;
+    word-wrap: break-word; /* معالجة خروج الرموز والنصوص */
+}
+
+.data-table th {
+    background-color: #0f172a;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+.data-table td {
+    color: #e2e8f0;
+}
+
+.data-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.badge-region {
+    background-color: #0c4a6e;
+    color: #38bdf8;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 25px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: opacity 0.2s;
+}
+
+.back-btn:hover {
+    opacity: 0.8;
+}
+
+/* تجاوب الشاشات الصغيرة */
+@media (max-width: 600px) {
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Analytics Dashboard</title>
+    <link rel="stylesheet" href="DashB.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="dashboard-header">
+        <h1>Corporate Sales Dashboard</h1>
+        <div class="user-profile">Data Analyst: Mariam Mousa</div>
+    </header>
+
+    <main class="container">
+        <!-- Stats Cards derived from Python Report -->
+        <section class="stats-grid">
+            <div class="stat-card revenue">
+                <h3>Total Cleaned Revenue</h3>
+                <div class="value">$15,283.00</div>
+            </div>
+            <div class="stat-card">
+                <h3>Top Selling Product</h3>
+                <div class="value">Mouse (50 Units)</div>
+            </div>
+            <div class="stat-card">
+                <h3>Highest Region Revenue</h3>
+                <div class="value">Cairo ($12,500)</div>
+            </div>
+        </section>
+
+        <!-- Cleaned Data View Table -->
+        <section class="table-section">
+            <h2>Cleaned Dataset Records (Verified by Pandas)</h2>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Units Sold</th>
+                            <th>Price Per Unit</th>
+                            <th>Region</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Laptop</strong></td>
+                            <td>10.0</td>
+                            <td>$800.00</td>
+                            <td><span class="badge-region">Cairo</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mouse</strong></td>
+                            <td>50.0</td>
+                            <td>$25.00</td>
+                            <td><span class="badge-region">Alex</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Monitor</strong></td>
+                            <td>15.0</td>
+                            <td>$300.00</td>
+                            <td><span class="badge-region">Cairo</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Keyboard</strong></td>
+                            <td>27.4</td>
+                            <td>$45.00</td>
+                            <td><span class="badge-region">Giza</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a href="Portfolio.html" class="back-btn">&larr; Back to Portfolio</a>
+        </section>
+    </main>
+
+</body>
+</html>
